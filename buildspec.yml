@@ -41,5 +41,5 @@ phases:
       - ls -lh
       - file deployment_package.zip
       - echo "Updating lambda Function..."
-      - aws lambda update-function-code --region <your-region> --function-name github-to-lambda-demo --zip-file fileb://deployment_package.zip
+      - aws lambda update-function-code --region us-east-1 --function-name github-to-lambda-demo --zip-file fileb://deployment_package.zip
       - echo "DONE!!"
